@@ -4,9 +4,8 @@ class ShittyDB {
 
   private $path;
 
-  public function __construct($path = false) {
-    if($path) $this->path = $path;
-    else "./";
+  public function __construct($path = './') {
+    $this->path = $path;
   }
 
 
