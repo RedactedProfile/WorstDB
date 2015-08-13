@@ -6,10 +6,10 @@ $db = new ShittyDB;
 $db->set('test', 'PHP is the best programming language evar');
 echo $db->get('test');
 
-echo "<hr />";
-echo "Expireable Test:<br /><br />";
-
+// Uncomment to create expirable db files
 /*
+echo "-------";
+echo "Expireable Test:";
 if(!$db->exists('expires')) {
     $db->set('expires', 'Some test data that expires in 10 seconds', 10);
 }
